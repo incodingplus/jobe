@@ -20,7 +20,8 @@ class CppTask extends LanguageTask
         parent::__construct($filename, $input, $params);
         $this->default_params['compileargs'] = array(
         '-Wall',
-        '-Werror');
+        '-Werror',
+        '-std=c++20');
     }
 
     public static function getVersionCommand()

@@ -22,7 +22,7 @@ class CTask extends LanguageTask
         $this->default_params['compileargs'] = array(
             '-Wall',
             '-Werror',
-            '-std=c99',
+            '-std=c2x',
             '-x c');
     }
 
