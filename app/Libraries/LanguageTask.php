@@ -322,9 +322,10 @@ abstract class LanguageTask
 
         $sandboxCommandBits = array_merge($sandboxCpuPinning, $sandboxCommandBits);
 
-        if ($memsize != 0) { 
-            $sandboxCommandBits[] = "--memsize=$memsize";
-        }
+        // TODO: 여기 부분 때문에 bun, node 관련이 계속 터짐
+        // if ($memsize != 0) { 
+        //     $sandboxCommandBits[] = "--memsize=$memsize";
+        // }
         if ($filesize != -1) {  // Runguard's default filesize ulimit is unlimited.
             $sandboxCommandBits[] = "--filesize=$filesize";
         }
