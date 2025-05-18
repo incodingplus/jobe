@@ -22,7 +22,7 @@ class BunTask extends LanguageTask
 
     public static function getVersionCommand()
     {
-        return array('/root/.bun/bin/bun --version', '/([0-9._]*)/');
+        return array("/usr/local/bin/bun --version", '/([0-9._]*)/');
     }
 
     public function compile()
@@ -47,7 +47,7 @@ class BunTask extends LanguageTask
 
     public function getExecutablePath()
     {
-         return '/root/.bun/bin/bun';
+         return '/usr/local/bin/bun';
     }
 
 
