@@ -22,7 +22,7 @@ class BunTask extends LanguageTask
 
     public static function getVersionCommand()
     {
-        return array('bun --version', '/([0-9._]*)/');
+        return array('/root/.bun/bin/bun --version', '/([0-9._]*)/');
     }
 
     public function compile()
