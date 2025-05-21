@@ -312,7 +312,7 @@ abstract class LanguageTask
                 "--user={$this->user}",
                 "--group=jobe",
                 "--cputime=$cputime",      // Seconds of execution time allowed
-                "--time=$killtime",        // Wall clock kill time
+                "--walltime=$killtime",        // Wall clock kill time
                 "--nproc=$numProcs",       // Max num processes/threads for this *user*
                 "--no-core",
                 "--streamsize=$streamsize"

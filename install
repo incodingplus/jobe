@@ -131,7 +131,7 @@ def make_runguard(install_dir):
     """Make the runguard application"""
     runguard_commands = [
         "cd {0}".format(install_dir + '/runguard'),
-        "gcc -o runguard runguard.c -lm",
+        "g++ -o runguard runguard.cc lib.error.c lib.misc.c -g -O2 -std=c++11 -lcgroup",
         "chmod 700 runguard"
     ]
     cmd = ';'.join(runguard_commands)
