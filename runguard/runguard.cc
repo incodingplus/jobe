@@ -30,7 +30,7 @@
 #include "config.h"
 
 /* Some system/site specific config: VALID_USERS, CHROOT_PREFIX */
-#include "runguard-config.h"
+#include "runguard-config-cc.h"
 
 #include <sys/types.h>
 #include <sys/wait.h>
