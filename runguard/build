@@ -1,0 +1,2 @@
+#!/bin/bash
+g++ -o runguard runguard.cc lib.error.c lib.misc.c -g -O2 -std=c++11 -lcgroup
